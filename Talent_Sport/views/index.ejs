@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title><%= title %></title>
+
+  <link rel='stylesheet' href='/stylesheets/home.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <script type="text/javascript" src="/javascript/mainpage.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/javascript/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          $('button').mouseenter(function () {
+              $(this).css("background-color", "#ff233d");
+
+          });
+          $('button').mouseleave(function(){
+              $(this).css('background-color', "DodgerBlue")
+          })
+
+
+      });
+      $(document).ready(function(){
+          $("input").focus(function(){
+              $(this).css("background-color", "#D1F2EB")
+          });
+      });
+      $(document).ready(function(){
+          $("textarea").focus(function(){
+              $(this).css("background-color", "#D1F2EB")
+          });
+      });
+      function msgSent(){
+          alert("your Message has been sent!!");
+      }
+
+
+  </script>
+</head>
+<body >
+
+    <% include template/header.ejs%>
+
+
+
+
+<main>
+  <div class="title">
+    <h1>Find·A·Sport·Talents</h1>
+    <h2>Make Your Dreams</h2>
+  </div>
+  <div class="buttonMenu" align="center">
+    <a href="/LoginUser"><button type="button" class="btn btn-info">I'am an Athlete</button> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/LoginUser"> <button type="button"  class="btn btn-info">I'am a Recruiter</button></a>
+  </div>
+
+  <div class="row" style=" display: block; background-color: #ffffff; column-count: 4; position: relative;top: 90px;white-space:nowrap;overflow-y: hidden;overflow-x:auto;background-image: url('/image/pattern.png'); margin-top: 40px; " align="center">
+    <div>
+      <img src="/images/png/backetball.jfif" name="image" />
+
+      <span>Basketball</span>
+    </div>
+    <div>
+      <img src="/images/png/boxing-gloves-icon.png" name="image" />
+      <span>Boxing</span>
+    </div>
+    <div> <img src="/images/png/ice-hockey-helmet-icon.png" name="image" /><span>Basketball</span></div>
+    <div><img src="/images/png/soccer_ball.ico" name="image" /><span>Hockeys Soccer</span></div>
+
+    <div><img src="/images/png/rugby.jfif" name="image" /><span>Rugby</span></div>
+
+
+    <div><img src="/images/png/baseball.jfif" name="image" /><span>Baseball</span></div>
+    <div><img src="/images/png/run.png" name="image" /><span>Running</span></div>
+    <div><img src="/images/png/tennis.jfif" name="image" /><span>Tennis</span></div>
+    <div><img src="/images/png/volleyball.gif" name="image" /><span>VolleyBall</span></div>
+
+    <div><img src="/images/png/Martial arts.png" name="image" /><span>Martial Arts</span></div>
+    <div><img src="/images/png/footballer.png" name="image" /><span>football</span></div>
+    <div><img src="/images/png/Equitation.jpg" name="image" /><span>Equitation</span></div>
+    <div><img src="/images/png/others.png" name="image" /><span>Others available</span></div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div id="home" name="home">
+
+  </div>
+
+    <div class="container-fluid bg-success" id="about" style="margin-top: 30px;
+
+ margin-bottom: auto" >
+
+      <div class="col-md-6 " style=" color: black;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;">
+      <h1 align="center" style="margin-top: 20px"> What is about?</h1>
+      <h3 align="center">Answer this Question</h3>
+
+      <p align="center" style="color: #ff233d"> <span >Do you like Sport?</span></p>
+      <p align="center" style="color: #ff233d"> <span >Do you have specific talent in Sport?</span></p><br><br>
+
+      <p style="font-size: 24px"> Here is a platform design for you. Create your profile, Update your details gradually. Our platform is designed to help you to make available your specific skills to eventual recruiter, which can help you to growth in your career</p>
+      </p>
+
+
+    </div >
+    <div class="col-md-6 align-content-lg-end"> <img src="/images/slide2.jpg" class="col-md-auto" name="image"  align="center" /></div>
+
+
+
+
+
+  </div>
+
+  <div class="container-fluid" style="background-image: url('images/recruiter2.jpg'); color: #ffffff">
+    <div class="col-md-6">
+      <img src="/images/recruiter2.jpg" name="image" style="width: 508px; height: 400px" />
+
+    </div>
+    <div class="col-md-6" >
+      <h1>Are you a Recruiter or Manager?</h1>
+      <br>
+      <h3>Are you looking for Talent you want to coach?</h3>
+      <br>
+      <h4>Do you want to make a good return investment?</h4>
+    </div>
+
+
+  </div>
+
+  <div class="container-fluid" style="background-color:#ffffff; height: 400px" id="contact">
+
+    <div class="col-md-6" style="display: block;line-height: 25px;padding-left: 20px; margin-top: 20px;vertical-align:middle; text-align: center"  >
+     <span class="glyphicon glyphicon-map-marker">Address: Ridzuan Condominium, Malaysia Kuala Lumpur </span><br>
+      <span class="glyphicon glyphicon-phone">Phone: 0060193221427 </span><br>
+      <span class="glyphicon glyphicon-envelope"> Email: ekangastevewilly@gmail.com </span>
+
+      </div>
+
+
+
+
+    <div  align="left" style=" margin-top: 20px;margin-bottom: auto" class="col-md-6" >
+      <h1 ><i><b>Contact US</b></i> </h1>
+      <form action="/contact_details" method="post" onsubmit="msgSent()">
+        <div class="form-group" align="left">
+
+          <div class="col-sm-7 form-group" style="background-color: transparent;"><input type="email" class="form-control" name="email" id="email" placeholder="Email" style="border-color: #ff233d;
+    border-width: 2px;"></div>
+
+        </div>
+        <div class="form-group form-group" align="left">
+
+          <div class="col-sm-7 form-group" ><input type="phone" class="form-control" name="phone" id="phone" placeholder="Phone" style="border-color: #ff233d;
+    border-width: 2px;"></div>
+
+        </div>
+        <div class="form-group" align="left">
+
+          <div class="col-sm-7 form-group"> <textarea class="form-control" name="message" id="message" placeholder="Message" rows="5" style="border-color: #ff233d;
+    border-width: 2px;"></textarea> </div>
+
+        </div>
+        <div class="form-group">
+          <div class="col-sm-7 form-group">
+            <input type="submit" class="btn btn-success pull-right" value="Submit" />
+          </div>
+        </div>
+
+      </form>
+
+
+    </div>
+
+  </div>
+  <div class="container-fluid align-content-center bg-light" id="contact">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15936.24109124489!2d101.6062233!3d3.0785835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb19e4816a5bc7fd!2sRidzuan+Condominium!5e0!3m2!1sen!2smy!4v1509621603389" width="1200" height="300" frameborder="0" style="border:0" allowfullscreen align="center"></iframe>
+
+  </div>
+</main>
+
+<footer class="container-fluid text-center" style="background-image: url('/images/pattern-2.png');color: #f4ffea;" >
+  <div class="row" style="color: #f4ffea; column-count: 4;  -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue; " >
+    <div class="col-xl-3">
+      <h3>Usefull Links</h3>
+
+        <span style="color:coral" ><a style="color:#f4ffea" href="#" >Be part of the project</a></span><br>
+        <span ><a href="#" style="color:#f4ffea">Board of Director</a></span><br>
+        <span class="list-group"><a href="#" style="color:#f4ffea">Terms and Conditions</a></span><br>
+        <span ><a href="#" style="color:#f4ffea">Vision & mission</a></span><br>
+        <span ><a href="#" style="color:#f4ffea">Career</a></span><br>
+        <span ><a href="#" style="color:#f4ffea">Achievements</a></span>
+
+
+
+
+
+    </div>
+    <div class="col-xl-3">
+      <h3>We Create a Dream For you</h3>
+      <p> Our Website is dedicated to create a dream <br> for the young generation.</p>
+    </div>
+    <div class="col-xl-2">
+      <h3>Social Networks</h3>
+      <h4>Connect with Us</h4>
+
+    </div>
+    <div class="col-xl-2">
+      <h3>Follow Us!!</h3>
+      <iframe width="200" height="200" src="https://www.youtube.com/embed/k2qgadSvNyU" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div  class="container-fluid align-content-lg-end">Copyright (c), 2017. Steve Willy</div>
+
+
+
+</footer>
+
+
+</body>
+</html>
